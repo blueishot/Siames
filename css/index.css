@@ -26,7 +26,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 50px;
     height: 50px;
     /* background-color: aqua; */
@@ -34,10 +33,15 @@ body {
     user-select: none;
 }
 
-.menu img {
+.imgMenu {
+    min-width: 100px;
+}
+
+.imgMenu img {
     width: 100%;
     cursor: pointer;
     height: 40px;
+    object-fit: contain;
 }
 
 .buttonsMenu {
@@ -50,4 +54,65 @@ body {
 .buttonsMenu span:hover {
     color:#98916F;
     transition: 0.3s;
+}
+
+.buttonsMenu2 {
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    gap: 50px;
+}
+
+.buttonsMenu2 span:hover {
+    color:#98916F;
+    transition: 0.3s;
+}
+
+.mobileMenu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobileMenu div {
+    margin: 2px;
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+}
+
+@media (max-width: 1172px) {
+    .buttonsMenu {
+        display: none;
+    }
+
+    .buttonsMenu2 {
+        position:absolute;
+        top: 6vh;
+        background-color: black;
+        width: 100vw;
+        height: 94vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .menu {
+        background-color: black;
+    }
+
+    .firstPage {
+        padding: 0px;
+    }
+
+    .mobileMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .mobileMenu div {
+        color: black;
+    }
 }
