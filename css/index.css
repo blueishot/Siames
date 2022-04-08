@@ -15,11 +15,13 @@ body {
 .firstPage {
     height: 810.12px;
     display: flex;
-    background-image: url(../img/276264282_573022404187138_7994431173371023448_n.jpg);
+    background-image: url(../img/81678356_2450098255202373_3305443948108972032_n.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     padding: 5px;
+    flex-direction: column;
 }
 
 .menu {
@@ -45,10 +47,20 @@ body {
 }
 
 .buttonsMenu {
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
     display: flex;
     gap: 50px;
+    color: #a1a2a9;
+    text-shadow:
+    0 0 5px #2A2607,
+    0 0 10px #2A2607,
+    0 0 20px #2A2607,
+    0 0 40px #2A2607,
+    0 0 80px #2A2607,
+    0 0 90px #2A2607,
+    0 0 100px #2A2607,
+    0 0 150px #2A2607;
 }
 
 .buttonsMenu span:hover {
@@ -76,7 +88,7 @@ body {
 
     .buttonsMenu{
         position:absolute;
-        top: 6vh;
+        top: 5vh;
         background-color: black;
         width: 100vw;
         height: 94vh;
@@ -86,6 +98,8 @@ body {
         justify-content: space-around;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in;
+        text-shadow: none;
+        color: #fff;
     }
 
     .buttonsMenu.active {
@@ -116,4 +130,25 @@ body {
     ::-webkit-scrollbar-track {
         background-color: red;
     }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    font-size: 100px;
+    color: #98916F;
+    text-align: center;
+    text-shadow:
+    0 0 5px #2A2607,
+    0 0 10px #2A2607,
+    0 0 20px #2A2607,
+    0 0 40px #fff,
+    0 0 80px #fff,
+    0 0 90px #fff;
+    /* 0 0 100px #fff,
+    0 0 150px #fff; */
+    user-select: none;
+
 }
