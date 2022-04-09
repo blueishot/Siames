@@ -100,8 +100,8 @@ body {
     }
 
     .menu {
-        background-color: black;
         justify-content: flex-start;
+        padding: 0px;
     }
 
     .firstPage {
