@@ -18,7 +18,6 @@ body {
     background-image: url(../img/81678356_2450098255202373_3305443948108972032_n.jpg);
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     padding: 5px;
     flex-direction: column;
@@ -144,4 +143,61 @@ body {
     0 0 150px #fff; */
     user-select: none;
 
+}
+
+.secondPage {
+    height: 810.12px;
+    background-color: black ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.secondPageTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+}
+
+.secondPageTitle span:nth-child(1) {
+    font-size: 100px;
+    color: #98916F;
+    font-style: italic;
+}
+
+.secondPageTitle span:nth-child(2) {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.albumCard {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    user-select: none;
+}
+
+.home {
+    width: 450px;
+    height: 450px;
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home:hover {
+    backdrop-filter: blur(50%);
+}
+
+.home div {
+    font-size: 80px;
+    font-weight: bold;
 }
